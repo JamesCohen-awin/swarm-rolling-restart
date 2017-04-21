@@ -6,4 +6,4 @@ header("Content-type: text/plain");
 ini_set("output_buffering", 0);
 ob_implicit_flush();
 
-system("ab -t30 http://dummyapp/");
+system("ab -t30 -d -c3 http://dummyapp/");
